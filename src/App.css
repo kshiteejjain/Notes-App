@@ -1,0 +1,168 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #b6b6b6;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.error {
+  color: #ff0000e2;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.notesCard {
+  width: 300px;
+  min-height: 230px;
+  max-height: 230px;
+  overflow-y: auto;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: self-start;
+  position: relative;
+}
+
+.notesCard:nth-child(odd) {
+  background-color: #b2dcfe;
+}
+
+.notesCard:nth-child(even) {
+  background-color: #ffd690;
+}
+
+
+.notesCard label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.createdDate {
+  font-size: 12px;
+}
+
+.description {
+  height: 135px;
+  overflow-y: auto;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 300px;
+  min-height: 230px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  border: 2px dashed #c1c1c1;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.deleteIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border-radius: 0 10px 0 0;
+  opacity: 0.7;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.deleteIcon:hover,
+.deleteIcon:focus {
+  opacity: 1;
+  border: none;
+}
+
+.deleteIcon img {
+  width: 18px;
+}
+
+.addButton {
+  font-size: 14px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #cecece;
+}
