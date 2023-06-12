@@ -97,6 +97,7 @@ textarea:focus {
 .notesCard label {
   font-weight: bold;
   font-size: 20px;
+  width: 75%;
 }
 
 p {
@@ -137,25 +138,29 @@ p {
   flex-wrap: wrap;
 }
 
-.deleteIcon {
-  position: absolute;
-  top: 0;
-  right: 0;
+.actions button {
   padding: 10px;
-  border-radius: 0 10px 0 0;
-  opacity: 0.7;
+  border-radius: 0;
+  opacity: 0.5;
   border: none;
   background-color: #fff;
   cursor: pointer;
+  margin-left: 5px;
 }
 
-.deleteIcon:hover,
-.deleteIcon:focus {
+.actions{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.actions button:hover,
+.actions button:focus {
   opacity: 1;
   border: none;
 }
 
-.deleteIcon img {
+.actions img {
   width: 18px;
 }
 
@@ -165,4 +170,20 @@ p {
   border: none;
   border-radius: 3px;
   background-color: #cecece;
+}
+.navbar{
+  padding: 20px;
+  margin-top: 20px;
+}
+.button-primary{
+  font-size: 14px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #cecece;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.button-primary:hover{
+  background-color: #fff;
 }

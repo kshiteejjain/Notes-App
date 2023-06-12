@@ -4,6 +4,8 @@ import type { RootState } from '../../app/store'
 type NotesState = {
   notesList: string[];
   id: number;
+  title: string,
+  description: string,
 };
 
 
@@ -19,10 +21,18 @@ export const counterSlice = createSlice({
     deleteNotes: (state, action) => {
       state.notesList.splice(action.payload, 1)
    },
+   editNotes: (state, action) => {
+    const {id, title, description} = action.payload;
+    const existingUser = state.notesList.find((item: any) => item.id === id);
+    if(existingUser) {
+      existingUser.title = title;
+      existingUser.description = description;
+    }
+  }
   }
 })
 
-export const { addNotes, deleteNotes } = counterSlice.actions
+export const { addNotes, deleteNotes, editNotes } = counterSlice.actions
 
 // Other code such as selectors can use the imported `RootState` type
 export const selectCount = (state: RootState) => state.notes.notesList
