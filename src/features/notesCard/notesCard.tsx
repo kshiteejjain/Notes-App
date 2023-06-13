@@ -19,20 +19,23 @@ const NotesCard = () => {
 
   return (
     <div className='flex'>
-      {notesData.length === 0 ? 'No Notes' : null}
-      {notesData?.map((item: any, id) => {
-        return (
-          <div className='notesCard' key={item.id}>
-            <label><span>{item?.title}</span></label>
-            <p className='description'><span> {item?.description}</span></p>
-            <p className='createdDate'>Created: {item?.createdDate}</p>
-            <div className='actions'>
-              <button onClick={() => navigate(`/EditNotes/${item.id}`)} title='Edit Notes'> <img src={edit} alt='Edit Notes' title='Edit Notes' /> </button>
-              <button onClick={() => handleDeleteNote(id)} title='Delete Notes'> <img src={trash} alt='Delete Notes' title='Delete Notes' /> </button>
-            </div>
-          </div>
-        )
-      }).reverse()}
+      {notesData.length === 0 ? <p className='noNotes'>No Notes Found!</p> :
+        <div className='flex mb60'>
+          {notesData?.map((item: any, id) => {
+            return (
+              <div className='notesCard' key={item.id}>
+                <label><span>{item?.title}</span></label>
+                <p className='description'><span> {item?.description}</span></p>
+                <p className='createdDate'>Created: {item?.createdDate}</p>
+                <div className='actions'>
+                  <button onClick={() => navigate(`/EditNotes/${item.id}`)} title='Edit Notes'> <img src={edit} alt='Edit Notes' title='Edit Notes' /> </button>
+                  <button onClick={() => handleDeleteNote(id)} title='Delete Notes'> <img src={trash} alt='Delete Notes' title='Delete Notes' /> </button>
+                </div>
+              </div>
+            )
+          }).reverse()}
+        </div>}
+
     </div>
   )
 }

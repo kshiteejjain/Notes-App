@@ -20,6 +20,7 @@ const App = () => {
         <Route path="/CreateNotes" element={<CreateNotes />} />
         <Route path="/EditNotes/:id" element={<EditNotes />} />
       </Routes>
+      <div className="footer"><p>Made with <span className="red"> ❤ </span> by Kshiteej Jain </p><a href="https://www.linkedin.com/in/kshiteejjain/" target="_blank" rel="noopener noreferrer">Linkedin</a><a href="https://github.com/kshiteejjain" target="_blank" rel="noopener noreferrer">Github</a><a href="mailto:kshiteejjain@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></div>
     </>
   )
 }

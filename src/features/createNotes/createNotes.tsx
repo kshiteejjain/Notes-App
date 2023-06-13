@@ -15,7 +15,7 @@ const Notes = () => {
     setError(false);
   }
 
-  const createdDate = new Date().toLocaleDateString();
+  const createdDate = new Date().toLocaleString();
 
   const formSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
