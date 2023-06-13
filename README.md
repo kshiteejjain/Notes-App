@@ -15,9 +15,6 @@ This project has been created using Redux Toolkit with React.
  - React
  - Redux Toolkit
  - CRUD Operations
-
-### *Live Link:
-https://image-finder-api-profile-card.vercel.app
  
 
 <img width="1792" alt="Screenshot 2023-06-13 at 6 38 14 PM" src="https://github.com/kshiteejjain/React-Redux-Notes-Maker/assets/10721667/7ea9396f-143e-4b35-8460-3079bd7c5ab5">
