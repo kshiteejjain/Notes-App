@@ -27,7 +27,7 @@ export const counterSlice = createSlice({
     if(existingUser) {
       existingUser.title = title;
       existingUser.description = description;
-    }
+    } as NotesState,
   }
   }
 })
